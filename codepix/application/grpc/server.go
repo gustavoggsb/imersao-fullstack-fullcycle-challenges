@@ -2,14 +2,15 @@ package grpc
 
 import (
 	"fmt"
+	"log"
+	"net"
+
 	"github.com/gustavoggsb/imersao-fullstack-fullcycle/application/grpc/pb"
 	"github.com/gustavoggsb/imersao-fullstack-fullcycle/application/usecase"
 	"github.com/gustavoggsb/imersao-fullstack-fullcycle/infrastructure/repository"
 	"github.com/jinzhu/gorm"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-	"log"
-	"net"
 )
 
 func StartGrpcServer(database *gorm.DB, port int) {

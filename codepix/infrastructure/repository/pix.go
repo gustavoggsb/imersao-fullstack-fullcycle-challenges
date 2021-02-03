@@ -2,6 +2,7 @@ package repository
 
 import (
 	"fmt"
+
 	"github.com/gustavoggsb/imersao-fullstack-fullcycle/domain/model"
 	"github.com/jinzhu/gorm"
 )
